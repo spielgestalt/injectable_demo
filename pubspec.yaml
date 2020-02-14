@@ -17,6 +17,7 @@ dependencies:
   json_annotation: ^3.0.1
   freezed_annotation:
   dio: ^3.0.8
+  pretty_dio_logger: ^1.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -26,6 +27,7 @@ dev_dependencies:
   retrofit_generator: ^1.2.2+1
   json_serializable: ^3.2.5
   freezed:
+  mockito: ^4.1.1
 flutter:
 
   uses-material-design: true
