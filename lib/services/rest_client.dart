@@ -11,8 +11,8 @@ part 'rest_client.g.dart';
 @injectable
 abstract class RestClient {
   @factoryMethod
-  factory RestClient(ConfigDatasource datasource) {
-    return _RestClient(datasource.dio, baseUrl: datasource.baseUrl);
+  factory RestClient(Dio dio,  ConfigDatasource datasource) {
+    return _RestClient(dio /*or datasource.dio*/, baseUrl: datasource.baseUrl);
   }
 
   @GET('/employees')
