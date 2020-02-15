@@ -17,6 +17,10 @@ void main() {
     });
   });
   group('injector tests', () {
-    test('should initialize retrofit', () {});
+    test('should initialize retrofit', () async {
+      final restClient = getIt<RestClient>();
+      final employees = await restClient.employees();
+      expect(employees.data.length, 24);
+    });
   });
 }
